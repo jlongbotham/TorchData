@@ -7,12 +7,12 @@
 
 ## Language Modelling
 
-* `billionwords.tar.gz` contains ten .th7 files (`train_data.th7` and `train_small.th7` are empty -- instead we'll be using `train_tiny.th7`). Make sure to save and uncompress this file in \home\<user>\data\BillionWords -- otherwise the script will try to download the complete 3.5 GB (!) dataset from a server in Montreal.
+* `billionwords.tar.gz` contains ten .th7 files (`train_data.th7` and `train_small.th7` are empty -- instead we'll be using `train_tiny.th7`). Make sure to save and uncompress this file in `/home/<user>/data/BillionWords` -- otherwise the script will try to download the complete 3.5 GB (!) dataset from a server in Montreal.
 * `languagemodel.lua` is the script we'll be working with from the *command line*
 
 ## Dependencies
 
-### *Both*
+### *Both Tutorials*
 
 * install [Torch](http://torch.ch/docs/getting-started.html)
 
