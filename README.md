@@ -2,7 +2,7 @@
 
 ## Image Classification
 
-* `cifar10torchsmall.zip` contains two .t7 files, one for training, one for testing from the [CIFAR-10 dataset](http://www.cs.toronto.edu/~kriz/cifar.html). They contain 32x32 images in 10 classes.
+* `cifar10-train.t7` and `cifar10-test.t7` are from the [CIFAR-10 dataset](http://www.cs.toronto.edu/~kriz/cifar.html) and contain 32x32 images in 10 classes.
 * `image classification.lua` is the script we'll be working with from an *iTorch notebook*
 
 ## Language Modelling
