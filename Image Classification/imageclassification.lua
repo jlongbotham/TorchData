@@ -45,6 +45,7 @@ end
 
 -- DEFINE THE MODEL
 
+require "nn"
 net = nn.Sequential()
 net:add(nn.SpatialConvolution(3, 6, 5, 5)) -- 3 input image channels, 6 output channels, 5x5 convolution kernel
 net:add(nn.SpatialMaxPooling(2,2,2,2))     -- A max-pooling operation that looks at 2x2 windows and finds the max.
@@ -96,7 +97,8 @@ for i=1,predicted:size(1) do
     print(classes[i], predicted[i])
 end
 
--- Test over whole test setcorrect = 0
+-- Test over whole test set
+correct = 0
 for i=1,10000 do
     local groundtruth = testset.label[i]
     local prediction = net:forward(testset.data[i])
